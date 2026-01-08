@@ -8,7 +8,9 @@
 }
 /* common styles */
 nav , .hero-container , .notes-description , .notes-container , 
-.solution-container {
+.solution-container ,
+.early-container {
+  
     border: 1px solid red;
     width: 89%;
     max-width: 1360px;
@@ -33,7 +35,11 @@ nav , .hero-container , .notes-description , .notes-container ,
     font-size: 16px;
     border: none;
 }
-
+button:hover{
+    background-color: aqua;
+    border: 1px solid tomato;
+    cursor: pointer;
+}
 /* header */
 nav{
     display: flex;
@@ -161,4 +167,16 @@ nav ul li a {
     display: flex;
     gap: 5px;
     margin-top: 10px;
+}
+/* early section */
+.early-container{
+    text-align: center;
+    background-color:#F7F6F2 ;
+    
+}
+.early-container h2 {
+    margin-top: 10px;
+}
+.early-container p{
+    margin-bottom: 10px;
 }

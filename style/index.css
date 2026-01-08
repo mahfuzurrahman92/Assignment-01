@@ -7,12 +7,20 @@
   
 }
 /* common styles */
-nav , .hero-container{
+nav , .hero-container , .notes-description , .notes-container{
     border: 1px solid red;
     width: 89%;
     max-width: 1360px;
     margin: 0 auto;
     padding: 10px;
+}
+.text-gray{
+    color: #627382;
+    line-height: 20px;
+    margin-top: 15px;
+}
+.text-navy{
+    color: #001931;
 }
 .btn{
     background-color: #469165;
@@ -32,7 +40,7 @@ nav{
 }
 nav ul li {
     list-style: none;
-    margin-right: 30px;
+    
 }
 nav ul li a {
     text-decoration: none;
@@ -45,6 +53,7 @@ nav ul li a {
  ul{
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 /* hero section */
 #hero{
@@ -89,4 +98,46 @@ nav ul li a {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid white;
+}
+/* notes */
+#notes{
+    text-align: center;
+}
+.notes-container{
+    display: flex;
+    gap: 20px;
+}
+
+.notes-description h2{
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.note{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+.note-image{
+    background-color: #F95555;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-items: center;
+    /* position: absolute; */
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.note-card-des h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 15px;
 }
